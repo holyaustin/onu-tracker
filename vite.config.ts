@@ -5,6 +5,7 @@ import { defineConfig } from "vite";
 export default defineConfig({
   build: {
     outDir: "build",
+         
   },
   server: {
     open: true,
@@ -13,6 +14,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./frontend"),
+      
     },
   },
 });

@@ -1,4 +1,4 @@
-# Building a Dapp with Nodit
+# onu-tracker : Tracking Crypto Assets with Nodit
 
 This tutorial will guide you through creating a simple Dapp using Nodit, leveraging [Aptos Lab's boilerplate](https://aptos.dev/en/build/create-aptos-dapp/templates/boilerplate).
 You can customize and adapt this template to fit your project needs!

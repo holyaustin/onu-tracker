@@ -9,9 +9,9 @@ export function Header() {
         <h1 className="display text-[#03D179]"> Onu-Tracker Powered by NODIT</h1>
       </div>
       
-          <a href="/" className="text-xl font-bold">Home</a>
+          <a href="/" className="text-2xl font-bold text-white">Home</a>
           <a href="" className="text-xl font-bold bg-[#03D179] text-primary h-10 px-4 py-1 rounded-md uppercase">Mainnet</a>
-          <a href="/TestnetFungible" className="text-xl font-bold">Testnet</a>
+          <a href="/TestnetFungible" className="text-2xl font-bold text-white">Testnet</a>
 
 {/*
       <div className="flex gap-2 items-center flex-wrap">

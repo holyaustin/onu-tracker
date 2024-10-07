@@ -4,7 +4,7 @@ import { Header2 } from "./components/Header2";
 // Internal pages
 import FungibleAssetBalances from "./pages/FungibleAssetBalances";
 import TestnetAssetBalances from "./pages/TestnetAssetBalances";
-
+// @ts-ignore
 import IndexPage from "./pages/index";
 
 function Layout() {

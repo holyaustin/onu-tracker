@@ -1,5 +1,4 @@
 import React from 'react';
-import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
 import { ThemeProvider } from 'theme-ui';
 import theme from '../theme';
 import SEO from '../components/seo';
@@ -7,37 +6,9 @@ import Layout from '../components/layout';
 import Banner from '../sections/banner';
 import Services from '../sections/services';
 import UltimateFeatures from '../sections/ultimate-feature';
-import Faq from '../sections/faq';
-//import IndexPage from "./pages/index";
-import App from "../App";
 
 export default function IndexPage() {
-  const router = createBrowserRouter([
-    {
-    // element: <Layout />,
-      children: [
-        {
-          path: "/",
-          element: <IndexPage />,
-        },
-        {
-          path: "/App",
-          element: <App />,
-        },
-      ],
-    },
-  ]);
   
-  function App() {
-    return (
-      <div className="w-screen h-screen">
-        <RouterProvider router={router} />
-      </div>
-    );
-  }
-
-
-
   return (
     <ThemeProvider theme={theme}>
       <Layout>

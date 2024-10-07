@@ -34,10 +34,7 @@ export const menuItems = [
     id: 3,
     title: 'Our Information',
     items: [
-      {
-        path: '#!',
-        label: 'Return Policy ',
-      },
+
       {
         path: '#!',
         label: 'Privacy Policy',
@@ -52,7 +49,7 @@ export const menuItems = [
       },
       {
         path: '#!',
-        label: 'Store Hours',
+        label: 'Payment Plan',
       },
     ],
   },
@@ -125,7 +122,7 @@ export const footerNav = [
   },
   {
     path: '#!',
-    label: 'Marketing',
+    label: 'Features',
   },
   {
     path: '#!',

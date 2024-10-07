@@ -1,5 +1,5 @@
-import { NETWORK2 } from "@/constants";
-import { WalletSelector } from "./WalletSelector";
+// import { NETWORK2 } from "@/constants";
+// import { WalletSelector } from "./WalletSelector";
 
 export function Header2() {
   return (

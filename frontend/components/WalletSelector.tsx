@@ -26,7 +26,7 @@ import {
 import { useToast } from "@/components/ui/use-toast";
 
 export function WalletSelector() {
-  const { account, connected, disconnect, wallet, changeNetwork } = useWallet();
+  const { account, connected, disconnect, wallet } = useWallet();
   const { toast } = useToast();
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 

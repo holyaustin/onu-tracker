@@ -8,7 +8,7 @@ import { FungibleAssetBalance, useGetFungibleAssetBalances } from "@/hooks/useGe
 import { convertAmountFromOnChainToHumanReadable } from "@/utils/helpers";
 import { useToast } from "@/components/ui/use-toast";
 
-function FungibleAssetBalances() {
+function TestnetAssetBalances() {
   const [address, setAddress] = useState("");
   const { data, isLoading } = useGetFungibleAssetBalances(address);
   const balances = data || [];
@@ -93,4 +93,4 @@ function FungibleAssetBalances() {
   );
 }
 
-export default FungibleAssetBalances;
+export default TestnetAssetBalances;

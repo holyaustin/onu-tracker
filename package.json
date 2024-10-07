@@ -19,6 +19,8 @@
   "dependencies": {
     "@aptos-labs/ts-sdk": "1.22.1",
     "@aptos-labs/wallet-adapter-react": "^3.5.0",
+    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.13.3",
     "@mizuwallet-sdk/core": "^1.3.0",
     "@radix-ui/react-collapsible": "^1.1.0",
     "@radix-ui/react-dialog": "^1.1.1",
@@ -31,12 +33,23 @@
     "@tanstack/react-query-devtools": "^5.51.23",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "framer-motion": "2.9.1",
     "lucide-react": "^0.383.0",
+    "polished": "4.0.3",
     "react": "^18.2.0",
+    "react-blockies": "1.4.1",
     "react-dom": "^18.2.0",
+    "react-icons": "^3.11.0",
+    "react-masonry-component": "^6.3.0",
     "react-router-dom": "^6.23.1",
+    "react-scripts": "5.0.1",
+    "react-scroll": "^1.8.1",
+    "react-slick": "^0.27.12",
+    "react-spinners": "^0.13.6",
+    "react-stickynode": "^3.0.3",
     "tailwind-merge": "^2.3.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "theme-ui": "^0.3.1"
   },
   "devDependencies": {
     "@types/node": "^20.14.1",

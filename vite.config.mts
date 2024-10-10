@@ -20,7 +20,7 @@ export default defineConfig({
       chunkSizeWarningLimit: 2048,
     rollupOptions: {
       external:
-        'node_modules/.pnpm/@aptos-labs+wallet-adapter-core@4.18.0_dcfd4d60db531082fddbc228bda87077/node_modules/@aptos-labs/wallet-adapter-core/dist/index.mjs',
+        'node_modules/.pnpm',
       
         input: {
           main: path.resolve("index.html"),

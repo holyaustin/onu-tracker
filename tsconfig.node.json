@@ -8,6 +8,6 @@
     "allowSyntheticDefaultImports": true,
      "jsx": "preserve"
   },
-  "include": ["vite.config.mts"],
+  "include": ["vite.config.ts"],
   "exclude": ["node_modules"]
 }

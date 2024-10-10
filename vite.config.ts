@@ -20,6 +20,9 @@ export default defineConfig({
    // commonjsOptions: { include: [/node_modules/] },
     chunkSizeWarningLimit: 2048,
     rollupOptions: {
+      output: {
+        interop: "auto",
+      },
       external:
         './node_modules/.pnpm',
       

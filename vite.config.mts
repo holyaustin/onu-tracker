@@ -17,11 +17,11 @@ export default defineConfig({
   },
   build: {
     outDir: "build",
-    commonjsOptions: { include: [/node_modules/] },
+   // commonjsOptions: { include: [/node_modules/] },
     chunkSizeWarningLimit: 2048,
     rollupOptions: {
       external:
-        'node_modules/.pnpm',
+        './node_modules/.pnpm',
       
         input: {
           main: path.resolve("index.html"),

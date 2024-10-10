@@ -5,8 +5,8 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
-     "jsx": "preserve",
+     "jsx": "preserve"
   },
   "include": ["vite.config.mts"],
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules"]
 }

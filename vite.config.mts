@@ -17,7 +17,8 @@ export default defineConfig({
   },
   build: {
     outDir: "build",
-      chunkSizeWarningLimit: 2048,
+    commonjsOptions: { include: [/node_modules/] },
+    chunkSizeWarningLimit: 2048,
     rollupOptions: {
       external:
         'node_modules/.pnpm',
@@ -29,8 +30,7 @@ export default defineConfig({
           TestnetAssetBalances: path.resolve(root, "pages", "TestnetAssetBalances.tsx"),
           
         }
-      }
-    
+    },
          
   },
 

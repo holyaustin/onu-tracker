@@ -22,7 +22,7 @@ Follow these steps to set up your Dapp with Nodit:
 ### 1. Clone the Repository
 
 ```sh
-git clone https://github.com/yourusername/nodit-demo-aptos-indexer-api.git
+git clone https://github.com/holyaustin/onu-tracker.git
 cd nodit-demo-aptos-indexer-api
 ```
 
@@ -31,7 +31,7 @@ cd nodit-demo-aptos-indexer-api
 Navigate to the project directory and install the required packages:
 
 ```sh
-npm install
+pnpm install
 ```
 
 ### 3. Configure Environment Variables

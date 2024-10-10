@@ -28,6 +28,7 @@
       "@/*": ["./frontend/*"]
     }
   },
-  "include": ["frontend", "vite-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "**/*.mjs"],
+  "include": ["frontend", "vite-env.d.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "**/*.mjs"],
+  "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

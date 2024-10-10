@@ -18,7 +18,8 @@ export default defineConfig({
   build: {
     outDir: "build",
       chunkSizeWarningLimit: 2048,
-      rollupOptions: {
+    rollupOptions: {
+      external: './node_modules/.pnpm/@aptos-labs+wallet-adapter-core@4.18.0_dcfd4d60db531082fddbc228bda87077/node_modules/@aptos-labs/wallet-adapter-core/dist/index.mjs',
         input: {
           main: path.resolve("index.html"),
           index: path.resolve(root, "pages", "index.jsx"),

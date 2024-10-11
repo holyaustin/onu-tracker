@@ -2,8 +2,8 @@ import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Header2 } from "./components/Header2";
 // Internal pages
-import FungibleAssetBalances from "./pages/FungibleAssetBalances";
-import TestnetAssetBalances from "./pages/TestnetAssetBalances";
+import FungibleAssetBalances from "./pages/mainnet/mainnet";
+import TestnetAssetBalances from "./pages/testnet/testnet";
 // @ts-ignore
 import IndexPage from "./pages/index";
 
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
     children: [
 
       {
-        path: "/MainnetFungible",
+        path: "/pages/mainnet/",
         element: <FungibleAssetBalances />,
       },
 
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
     children: [
 
       {
-        path: "/TestnetFungible",
+        path: "/pages/testnet/",
         element: <TestnetAssetBalances />,
       },
       

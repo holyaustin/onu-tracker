@@ -5,7 +5,25 @@ import { defineConfig } from "vite";
 export default defineConfig({
   build: {
     outDir: "build",
+    chunkSizeWarningLimit: 2048,
+    rollupOptions: {
+      output: {
+        interop: "auto",
+      },
+      external:
+        './node_modules/.pnpm',
+        input: {
+         // main: path.resolve("index.html"),
+          main: path.resolve(__dirname, "index.html"),
+          mainnet: path.resolve(__dirname, "frontend/pages/mainnet/index.html"),
+          testnet: path.resolve(__dirname, "frontend/pages/testnet/index.html"),
+          
+        }
+    },
+
+
   },
+
   server: {
     open: true,
   },
@@ -15,4 +33,6 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./frontend"),
     },
   },
+
+
 });

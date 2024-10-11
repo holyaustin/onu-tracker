@@ -11,7 +11,7 @@ export function Header() {
       
           <a href="/" className="text-2xl font-bold text-white">Home</a>
           <a href="" className="text-xl font-bold bg-[#03D179] text-primary h-10 px-4 py-1 rounded-md uppercase">Mainnet</a>
-          <a href="/TestnetFungible" className="text-2xl font-bold text-white">Testnet</a>
+          <a href="/pages/testnet/" className="text-2xl font-bold text-white">Testnet</a>
 
 {/*
       <div className="flex gap-2 items-center flex-wrap">

@@ -10,7 +10,7 @@ export function Header2() {
       </div>
 
       <a href="/" className="text-2xl font-bold text-white">Home</a>
-          <a href="/pages/mainnet/" className="text-2xl font-bold text-white">Mainnet</a>
+          <a href="/mainnet/" className="text-2xl font-bold text-white">Mainnet</a>
       <a href="" className="text-xl font-bold bg-[#03D179] text-primary h-10 px-4 py-1 rounded-md uppercase">Testnet</a> 
         {/*
       <div className="flex gap-2 items-center flex-wrap">

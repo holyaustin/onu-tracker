@@ -1,4 +1,5 @@
 import path from "path";
+import { resolve } from 'path'
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
@@ -14,14 +15,12 @@ export default defineConfig({
         './node_modules/.pnpm',
         input: {
          // main: path.resolve("index.html"),
-          main: path.resolve(__dirname, "index.html"),
-          mainnet: path.resolve(__dirname, "frontend/pages/mainnet/index.html"),
-          testnet: path.resolve(__dirname, "frontend/pages/testnet/index.html"),
+          main: resolve(__dirname, "index.html"),
+          mainnet: resolve(__dirname, "frontend/pages/mainnet/index.html"),
+          testnet: resolve(__dirname, "frontend/pages/testnet/index.html"),
           
         }
     },
-
-
   },
 
   server: {
@@ -33,6 +32,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./frontend"),
     },
   },
-
 
 });

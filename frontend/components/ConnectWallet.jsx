@@ -93,7 +93,7 @@ const ConnectWallet = () => {
         </>
       ) : (
           <div >
-            <a href="/pages/mainnet/" >
+            <a href="/mainnet/" >
           <Button variant="secondary" sx={styles.submit }
             type="button" 
           >

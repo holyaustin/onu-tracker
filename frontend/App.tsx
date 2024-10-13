@@ -1,11 +1,11 @@
 import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
-import { Header } from "./components/Header";
-import { Header2 } from "./components/Header2";
+import { Header } from "@/components/Header";
+import { Header2 } from "@/components/Header2";
 // Internal pages
-import FungibleAssetBalances from "./pages/mainnet/mainnet";
-import TestnetAssetBalances from "./pages/testnet/testnet";
+import FungibleAssetBalances from "@/pages/mainnet/mainnet";
+import TestnetAssetBalances from "@/pages/testnet/testnet";
 // @ts-ignore
-import IndexPage from "./pages/index";
+import IndexPage from "@/pages/index";
 
 function Layout() {
   return (
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
     children: [
 
       {
-        path: "/pages/mainnet/",
+        path: "/mainnet/",
         element: <FungibleAssetBalances />,
       },
 
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
     children: [
 
       {
-        path: "/pages/testnet/",
+        path: "/testnet/",
         element: <TestnetAssetBalances />,
       },
       

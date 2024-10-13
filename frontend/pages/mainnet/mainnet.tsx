@@ -7,8 +7,9 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { FungibleAssetBalance, useGetFungibleAssetBalances } from "@/hooks/useGetFungibleAssetBalances";
 import { convertAmountFromOnChainToHumanReadable } from "@/utils/helpers";
 import { useToast } from "@/components/ui/use-toast";
+import { Header } from "@/components/Header";
 
-function FungibleAssetBalances() {
+function MainnetAssetBalances() {
   const [address, setAddress] = useState("");
   const { data, isLoading } = useGetFungibleAssetBalances(address);
   const balances = data || [];
@@ -33,7 +34,10 @@ function FungibleAssetBalances() {
   };
 
   return (
+    <>
+    <Header />
     <div className="flex items-center justify-between px-14 py-2 max-w-screen-xl mx-auto w-full flex-wrap gap-4">
+           
       {/* Search Bar */}
       <form className="w-full flex gap-2 justify-center my-10" onSubmit={onSubmit}>
         <Input
@@ -89,8 +93,9 @@ function FungibleAssetBalances() {
           </TableBody>
         </Table>
       </div>
-    </div>
+      </div>
+      </>
   );
 }
 
-export default FungibleAssetBalances;
+export default MainnetAssetBalances;

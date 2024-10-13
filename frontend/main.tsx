@@ -2,11 +2,12 @@ import "./index.css";
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-//import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import App from "@/App.tsx";
-//import FungibleAssetBalances from "@/pages/mainnet/mainnet";
-//import TestnetAssetBalances from "@/pages/testnet/testnet";
+//import App from "@/App.tsx";
+import IndexPage from "@/pages/index.jsx";
+import MainnetAssetBalances from "@/pages/mainnet/mainnet";
+import TestnetAssetBalances from "@/pages/testnet/testnet";
 
 // Internal components
 import { Toaster } from "@/components/ui/toaster.tsx";
@@ -25,18 +26,18 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
             <ReactQueryDevtools initialIsOpen={false} />
         <TooltipProvider delayDuration={100}>
 
-              {/**
+             
               <BrowserRouter>
                <Routes>
-                <Route path="/" element={<App />} />
-                <Route path="/mainnet" element={<FungibleAssetBalances />} />
+                <Route path="/" element={<IndexPage />} />
+                <Route path="/mainnet" element={<MainnetAssetBalances />} />
                 <Route path="/testnet" element={<TestnetAssetBalances />} />
                 </Routes>
                  </BrowserRouter>
-                 */}
+               
               
-              <App /> 
-              {/**<IndexPage />*/}
+             
+              {/**<IndexPage />   <App /> */}
               <Toaster />
             </TooltipProvider>
           </QueryClientProvider>

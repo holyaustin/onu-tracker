@@ -7,6 +7,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { FungibleAssetBalance, useGetFungibleAssetBalances } from "@/hooks/useGetFungibleAssetBalances2";
 import { convertAmountFromOnChainToHumanReadable } from "@/utils/helpers";
 import { useToast } from "@/components/ui/use-toast";
+import { Header2 } from "@/components/Header2";
 
 function TestnetAssetBalances() {
   const [address, setAddress] = useState("");
@@ -33,6 +34,8 @@ function TestnetAssetBalances() {
   };
 
   return (
+    <>
+    <Header2 />
     <div className="flex items-center justify-between px-14 py-2 max-w-screen-xl mx-auto w-full flex-wrap gap-4">
       {/* Search Bar */}
       <form className="w-full flex gap-2 justify-center my-10" onSubmit={onSubmit}>
@@ -89,7 +92,8 @@ function TestnetAssetBalances() {
           </TableBody>
         </Table>
       </div>
-    </div>
+      </div>
+      </>
   );
 }
 

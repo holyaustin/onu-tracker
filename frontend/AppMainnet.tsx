@@ -1,9 +1,9 @@
 import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
 import { Header } from "@/components/Header";
-import { Header2 } from "@/components/Header2";
+//import { Header2 } from "@/components/Header2";
 // Internal pages
-import FungibleAssetBalances from "@/pages/mainnet/mainnet";
-import TestnetAssetBalances from "@/pages/testnet/testnet";
+import MainnetAssetBalances from "@/pages/mainnet/mainnet";
+//import TestnetAssetBalances from "@/pages/testnet/testnet";
 // @ts-ignore
 import IndexPage from "@/pages/index";
 
@@ -15,21 +15,8 @@ function Layout() {
     </>
   );
 }
-function Layout2() {
-  return (
-    <>
-      <Header2 />
-      <Outlet />
-    </>
-  );
-}
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <IndexPage />,
-  },
-
 
   {
     element: <Layout />,
@@ -37,27 +24,16 @@ const router = createBrowserRouter([
 
       {
         path: "/mainnet/",
-        element: <FungibleAssetBalances />,
+        element: <MainnetAssetBalances />,
       },
 
       
     ],
   },
 
-  {
-    element: <Layout2 />,
-    children: [
-
-      {
-        path: "/testnet/",
-        element: <TestnetAssetBalances />,
-      },
-      
-    ],
-  },
 ]);
 
-function App() {
+function AppMainnet() {
   return (
     <div className="w-screen h-screen">
       <RouterProvider router={router} />
@@ -65,4 +41,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppMainnet;

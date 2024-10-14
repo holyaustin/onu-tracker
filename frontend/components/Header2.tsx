@@ -1,5 +1,6 @@
+import {Link} from "react-router-dom";
 // import { NETWORK2 } from "@/constants";
-// import { WalletSelector } from "./WalletSelector";
+import { WalletSelector } from "./WalletSelector";
 
 export function Header2() {
   return (
@@ -9,14 +10,13 @@ export function Header2() {
         <h1 className="display text-[#03D179]"> Onu-Tracker Powered by NODIT</h1>
       </div>
 
-      <a href="/" className="text-2xl font-bold text-white">Home</a>
-          <a href="/mainnet" className="text-2xl font-bold text-white">Mainnet</a>
-      <a href="" className="text-xl font-bold bg-[#03D179] text-primary h-10 px-4 py-1 rounded-md uppercase">Testnet</a> 
-        {/*
+      <Link to="/" className="text-2xl font-bold text-white">Home</Link>
+      <Link to="/mainnet" className="text-2xl font-bold text-white">Mainnet</Link> 
+      <Link to="/testnet"  className="text-xl font-bold bg-[#03D179] text-primary h-10 px-4 py-1 rounded-md uppercase">Testnet</Link> 
       <div className="flex gap-2 items-center flex-wrap">
-        <div className="bg-[#03D179] text-primary h-10 px-4 py-2 rounded-md uppercase">{NETWORK2}</div>
+      {/*<div className="bg-[#03D179] text-primary h-10 px-4 py-2 rounded-md uppercase">{NETWORK2}</div>*/}
        <WalletSelector /> 
-      </div> */}
+      </div> 
     </div> 
   );
 }

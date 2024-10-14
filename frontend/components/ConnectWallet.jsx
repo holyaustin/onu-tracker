@@ -13,6 +13,7 @@ import {
   Container,
 } from 'theme-ui';
 import React, { useEffect, useState } from "react";
+import {Link} from "react-router-dom";
 import Blockies from "react-blockies";
 import { useNavigate } from "react-router-dom";
 import { rgba } from 'polished';
@@ -21,6 +22,7 @@ import { rgba } from 'polished';
 const truncateAddress = (address) => `${address.slice(0, 8)}...${address.slice(-4)}`;
 
 const ConnectWallet = () => {
+
   const navigate = useNavigate();
   const [haveMetamask, sethaveMetamask] = useState(true);
   const [address, setAddress] = useState();
@@ -93,13 +95,14 @@ const ConnectWallet = () => {
         </>
       ) : (
           <div >
-            <a href="/mainnet/" >
+            
+            <Link to="/mainnet">
           <Button variant="secondary" sx={styles.submit }
             type="button" 
           >
             {haveMetamask ? "Start App" : "Start"}
               </Button>
-              </a>
+              </Link>
         </div>
       )}
     </div>
